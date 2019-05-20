@@ -3,14 +3,6 @@
 @import url("fonts/Cocogoose-Classic-ExtraBold.ttf");
 @import url("fonts/Cocogoose-Classic-Medium");
 
-:root {
-    --dark-pink: #F86D70;
-    --light-green: #19C4AB;
-    --dark-green: #008F89;
-    --yellow: #FCB83B;
-    --dark-blue: #04318C;
-
-}
 
 @font-face {
     font-family: "Coco-Bold";
@@ -18,16 +10,19 @@
         url("fonts/Cocogoose-Classic-ExtraBold.ttf");
 }
 
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
 @font-face {
     font-family: "Coco-Medium";
     src:
         url("fonts/Cocogoose-Classic-Medium.ttf");
+}
+
+:root {
+    --dark-pink: #F86D70;
+    --light-green: #19C4AB;
+    --dark-green: #008F89;
+    --yellow: #FCB83B;
+    --dark-blue: #04318C;
+
 }
 
 .titles {
@@ -38,33 +33,12 @@ a {
 
 .subtitles {}
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /*NAVIGATION*/
-/*
-#nav-reuse {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-
-}
-
-.nav-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-
-}
-
-.nav-link {
-    background-color: var(--dark-green);
-    padding: 2px;
-    margin: 2px;
-
-}
-*/
-
-
 
 /* Nav source code 
  * Made by Erik Terwan
@@ -81,16 +55,15 @@ body {
 }
 
 
-
-a {
+.menu-links {
     text-decoration: none;
     color: var(--dark-green);
-
     transition: color 0.3s ease;
 }
 
-a:hover {
+.menu-links:hover {
     color: var(--light-green);
+
 }
 
 #menuToggle {
@@ -98,11 +71,7 @@ a:hover {
     position: absolute;
     top: 50px;
     right: 50px;
-
     z-index: 1;
-
-    -webkit-user-select: none;
-    user-select: none;
 }
 
 #menuToggle input {
@@ -112,13 +81,9 @@ a:hover {
     position: absolute;
     top: -7px;
     left: -5px;
-
     cursor: pointer;
-
     opacity: 0;
     z-index: 2;
-
-
 }
 
 
@@ -128,14 +93,10 @@ a:hover {
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-
     background: var(--dark-green);
     border-radius: 3px;
-
     z-index: 1;
-
     transform-origin: 4px 0px;
-
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
         background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
         opacity 0.55s ease;
@@ -171,18 +132,15 @@ a:hover {
 #menu {
     position: absolute;
     width: 300px;
-    height: 100wh;
     margin: -100px 0 0 0;
     padding: 50px;
     padding-top: 125px;
     right: -100px;
-
-    background: #ededed;
+    font-family: "Coco-bold";
+    background: var(--yellow);
     list-style-type: none;
-
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 
@@ -196,3 +154,28 @@ a:hover {
     transform: scale(1.0, 1.0);
     opacity: 1;
 }
+
+
+/*RESPONSIVENESS*/
+@media (min-width: 600px) {
+    #menu {
+        height: 100vh;
+        width: 50vw;
+        background-image: url(../media/menu-bg.png);
+       
+      
+
+    }
+
+    #menu li {
+        font-size: 4rem;
+    }
+    
+    .menu-links {
+        font-size: 40rem;
+        
+    }
+
+    #menuToggle input:checked ~ span {
+         background: var(--dark-blue);
+    }
