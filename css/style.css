@@ -1,0 +1,34 @@
+@import url("fonts/Cocogoose-Classic-ExtraBold.ttf");
+@import url("fonts/Cocogoose-Classic-Medium");
+
+:root {
+    --dark-pink:#F86D70;
+    --light-green:#19C4AB;
+    --dark-green:#008F89;
+    --yellow:#FCB83B;
+    --dark-blue:#04318C;
+    
+}
+
+@font-face {
+font-family: "Coco-Bold";
+src: 
+url("fonts/Cocogoose-Classic-ExtraBold.ttf");
+}
+
+
+
+@font-face {
+font-family: "Coco-Medium";
+src: 
+url("fonts/Cocogoose-Classic-Medium.ttf");
+}
+
+
+p{
+    font-family: Coco-Medium;
+        color:var(--dark-blue);
+}
+h1, h2{
+    font-family: Coco-Bold;
+}
