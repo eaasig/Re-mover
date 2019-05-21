@@ -177,5 +177,5 @@ body {
     }
 
     #menuToggle input:checked ~ span {
-         background: var(--dark-blue);
+         background: var(--dark-green);
     }
