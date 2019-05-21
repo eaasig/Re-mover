@@ -46,6 +46,12 @@ a {
  * MIT License
  */
 
+.logo {
+      display: block;
+      padding-top: 10px;
+    padding-left: 10px;
+    z-index: 1;
+}
 
 body {
     margin: 0;
@@ -55,13 +61,13 @@ body {
 }
 
 
-.menu-links {
+.menuLinks {
     text-decoration: none;
     color: var(--dark-green);
     transition: color 0.3s ease;
 }
 
-.menu-links:hover {
+.menuLinks:hover {
     color: var(--light-green);
 
 }
@@ -102,12 +108,17 @@ body {
         opacity 0.55s ease;
 }
 
+
 #menuToggle span:first-child {
     transform-origin: 0% 0%;
 }
 
 #menuToggle span:nth-last-child(2) {
     transform-origin: 0% 100%;
+}
+
+#menuToggle span:nth-last-child(3){
+      background: var(--light-green);
 }
 
 
@@ -155,27 +166,215 @@ body {
     opacity: 1;
 }
 
+/*CONTACT & SOME*/
+
+.box {
+  background-color: var(--dark-pink);
+  height: 100px;
+  width: 100px;
+    display:flex;
+   
+}
+
+.transform {
+ transition: all 1s ease;
+}
+
+.transform-active {
+  background-color: var(--dark-green);
+  width: 250px;
+  
+}
+  
+.infoContainer {
+    display:flex;
+    
+
+}
+
+
+.expandContent{
+    
+ opacity:0;
+    width:100px;
+    transition: opacity 1.5s ease-in-out;
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+}
+
+
+
+.expandContent-active{
+   opacity:1;
+  }
+
+.expandContentFlex {
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactTitle {
+    padding:25px;
+    width:50px;
+    height:100px;
+     font-family: "Coco-bold";
+    color:white;
+}
+
+
+
+
+
+
+/*RE-MOVER*/
+
+#re-moverHeader{
+/*
+    background-color: white;
+    grid-row-start: 4;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15px 1fr 15px;
+*/
+    top:0px;
+    width:100vw;    
+    position:fixed;
+    z-index: 1;    
+        
+}
+
+#re-moverNav {
+    background-color: white;
+    grid-row-start: 4;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15px 1fr 15px;
+    bottom:0px;
+    width:100vw;
+    position:fixed;
+    z-index: 1;
+        
+}
+
+
+.re-moverMenu {
+   background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    grid-row-start: 2; 
+}
+    
+
+.activeRemover {
+   color:var(--dark-green); 
+    
+}
+
+
+#nav1{
+    background-image:url(../media/re-mover/home-icon.svg) ; 
+        grid-column-start: 1;
+}
+
+#nav2{
+    background-image:url(../media/re-mover/search-icon.svg) ; 
+     grid-column-start: 2;
+}
+
+#nav3{
+    background-image:url(../media/re-mover/chat-icon.svg) ; 
+     grid-column-start: 3;
+}
+
+#nav4{
+   background-image:url(../media/re-mover/profile-icon.svg) ;  
+     grid-column-start: 4;
+}
+
+
+
+
+
+
+
+
+
+#slideout {
+    background: #f4f4f4;
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    top: 30%;
+    left:-400px;
+    padding-left: 0;
+    z-index: 50;
+}
+    
+#clickme {
+    position: absolute;
+    top: 0; right: -20px;
+    height: 20px;
+    width: 20px;
+    background: tomato;
+    cursor: pointer;
+}
+
+#slidecontent {
+    float:left;
+    padding: 35px;
+}
+
+.overlay {
+    background-color: #000;
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity = 50); /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 49;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*RESPONSIVENESS*/
 @media (min-width: 600px) {
     #menu {
-        height: 100vh;
+        height: 80vh;
         width: 50vw;
         background-image: url(../media/menu-bg.png);
-       
-      
-
     }
 
     #menu li {
         font-size: 4rem;
     }
     
-    .menu-links {
+    .menuLinks {
         font-size: 40rem;
         
     }
 
     #menuToggle input:checked ~ span {
-         background: var(--dark-green);
+         background: var(--yellow);
     }
+    
+    

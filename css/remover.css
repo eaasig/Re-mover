@@ -1,0 +1,153 @@
+/*UTILITIES*/
+
+@import url("fonts/Cocogoose-Classic-ExtraBold.ttf");
+@import url("fonts/Cocogoose-Classic-Medium");
+
+
+@font-face {
+    font-family: "Coco-Bold";
+    src:
+        url("fonts/Cocogoose-Classic-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Coco-Medium";
+    src:
+        url("fonts/Cocogoose-Classic-Medium.ttf");
+}
+
+:root {
+    --dark-pink: #F86D70;
+    --light-green: #19C4AB;
+    --dark-green: #008F89;
+    --yellow: #FCB83B;
+    --dark-blue: #04318C;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    top:25px;
+    overflow-x: hidden;
+    background-color: lightpink;
+}
+
+
+.titles {
+    font-family: "Coco-bold";
+    color: var(--dark-blue);
+
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*NAVIGATION*/
+
+#re-moverNav {
+    background-color: white;
+    grid-row-start: 4;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 15px 1fr 15px;
+    bottom: 0px;
+    width: 100vw;
+    position: fixed;
+    z-index: 1;
+    grid-gap: 5px;
+
+}
+
+
+.re-moverMenu {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    grid-row-start: 2;
+    height: 25px;
+}
+
+
+
+
+
+#nav1 {
+    background-image: url(../media/re-mover/home-icon.svg);
+    grid-column-start: 1;
+}
+
+#nav2 {
+    background-image: url(../media/re-mover/search-icon.svg);
+    grid-column-start: 2;
+}
+
+#nav3 {
+    background-image: url(../media/re-mover/chat-icon.svg);
+    grid-column-start: 3;
+}
+
+#nav4 {
+    background-image: url(../media/re-mover/profile-icon.svg);
+    grid-column-start: 4;
+}
+
+
+/*MENU*/
+#re-moverHeader {
+   
+    width: 100vw;
+    height:25px;
+    background-color: white;
+    margin:0;
+    padding:0;
+    position:fixed;
+   
+}
+
+#slideout {
+    background: #f4f4f4;
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    top: 30%;
+    right: -400px;
+    padding-left: 0;
+    z-index: 50;
+}
+
+#clickme {
+    position: absolute;
+    top: 0;
+    left: -50px;
+    height: 20px;
+    width: 20px;
+    background: tomato;
+    cursor: pointer;
+}
+
+#slidecontent {
+    float: right;
+    padding: 35px;
+}
+
+.overlay {
+    background-color: #000;
+    bottom: 0;
+    display: none;
+    left: 0;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    /* IE7 & 8 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 49;
+}
+
+
