@@ -42,8 +42,8 @@ body {
     font-family: "Coco-bold";
     color: var(--dark-blue);
     text-align: center;
-    margin:10px;
-    padding:2px;
+    margin: 10px;
+    padding: 2px;
 }
 
 
@@ -53,8 +53,22 @@ a {
 
 }
 
+/*VISIBILITY UTILITIES*/
 .hidden {
     display: none;
+}
+
+.mobileOnly {
+    display: inline-block;
+}
+
+.warningMessage {
+    display: none;
+
+}
+
+.finePrint {
+    font-size:1rem;
 }
 
 /*BACK BUTTON*/
@@ -62,6 +76,7 @@ a {
     padding: 18px;
     cursor: pointer;
 }
+
 /* give it hidden class if not on a page */
 
 
@@ -200,7 +215,7 @@ a {
 .pageNames {
     font-family: "Coco-bold", sans-serif;
     color: var(--dark-green);
-    font-size: 1.8em;
+    font-size: 1.8rem;
     padding-top: 8px;
     padding-left: 18px;
 }
@@ -224,7 +239,7 @@ a {
     top: 0;
     left: 0;
     padding: 0;
-    margin: 0;
+    margin: auto;
     background-color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.97);
     overflow-x: hidden;
@@ -245,7 +260,7 @@ a {
     display: block;
     transition: 0.3s;
     float: right;
-    font-size: 2em;
+    font-size: 2rem;
     position: relative;
     cursor: pointer;
     padding-right: 25px;
@@ -307,77 +322,52 @@ a {
 /*HOME REGISTERED USER*/
 
 .homeContent {
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     background: white;
     justify-content: center;
-    margin:0 20px 0 20px;
+    margin: 0 20px 0 20px;
 }
 
-.homeContent section{
-       height:25vh;
-       margin-bottom:10px;
-       background: linear-gradient(172.87deg, #F8F8F8 9.49%, rgba(248, 247, 245, 0.985313) 45.6%, rgba(248, 246, 242, 0.972014) 90.76%, #F8F3E9 122.78%, rgba(249, 225, 182, 0.671471) 145.42%, rgba(252, 184, 59, 0.06) 145.43%);
-       box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.1);
-       border-radius: 24px;
-       display:flex;
-       justify-content: center;
+.homeContent section {
+    height: 25vh;
+    margin-bottom: 10px;
+    background: linear-gradient(172.87deg, #F8F8F8 9.49%, rgba(248, 247, 245, 0.985313) 45.6%, rgba(248, 246, 242, 0.972014) 90.76%, #F8F3E9 122.78%, rgba(249, 225, 182, 0.671471) 145.42%, rgba(252, 184, 59, 0.06) 145.43%);
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
 }
 
 
 
 .wrapper {
     max-width: 500px;
- }
+    margin: auto;
+}
 
 
+/*Screen sizes 500px and up*/
 
+@media(min-width: 510px) {
+    .mobileOnly {
+        display: none;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .warningMessage {
+        position: absolute;
+        display: inline-block;
+        height: 100vh;
+        width: 500px;
+        background: linear-gradient(172.87deg, #F8F8F8 9.49%, rgba(248, 247, 245, 0.985313) 45.6%, rgba(248, 246, 242, 0.972014) 90.76%, #F8F3E9 122.78%, rgba(249, 225, 182, 0.671471) 145.42%, rgba(252, 184, 59, 0.06) 145.43%);
+        box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        opacity:0.95;
+        display: flex;
+        font-size: 2em;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 999;
+    }
+}
