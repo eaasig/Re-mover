@@ -140,7 +140,7 @@ a {
 
 #menu {
     position: absolute;
-    width: 100vw;
+    width: 500px;
     height: 100vh;
     top: 35px;
     margin: -100px 0 0 0;
@@ -160,7 +160,7 @@ a {
     margin: 10px;
     font-size: 22px;
     border-bottom: solid var(--dark-blue) 1px;
-    width: 80vw;
+    width: 400px;
     color: var(--dark-blue)
 }
 
@@ -171,7 +171,7 @@ a {
 
 #re-moverHeader {
 
-    width: 100vw;
+    width: 500px;
     height: 35px;
     font-family: "Coco-medium", sans-serif;
     color: var(--dark-green);
@@ -234,7 +234,7 @@ a {
 .overlay-content {
     position: relative;
     top: 25%;
-    width: 100%;
+    width: 500px;
     text-align: center;
 }
 
@@ -267,7 +267,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 15px 1fr 15px;
     bottom: 0px;
-    width: 100vw;
+    width: 500px;
     position: fixed;
     z-index: 1;
 }
@@ -326,12 +326,9 @@ a {
 
 
 
-
-
-
-
-
-
+.wrapper {
+    max-width: 500px;
+ }
 
 
 

@@ -1,7 +1,7 @@
 function openOverlay() {
-  document.getElementById("myNav").style.width = "100%";
+  document.getElementById("overlayNav").style.width = "500px";
 }
 
 function closeOverlay() {
-  document.getElementById("myNav").style.width = "0%";
+  document.getElementById("overlayNav").style.width = "0%";
 }
