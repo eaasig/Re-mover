@@ -22,35 +22,245 @@
     --dark-green: #008F89;
     --yellow: #FCB83B;
     --dark-blue: #04318C;
+    --gray: #f3f3f3;
 
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body {
     margin: 0;
     padding: 0;
-    top:25px;
+    top: 45px;
     overflow-x: hidden;
-    background-color: lightpink;
 }
 
 
 .titles {
     font-family: "Coco-bold";
     color: var(--dark-blue);
-
+    text-align: center;
+    margin:10px;
+    padding:2px;
 }
 
 
 
 a {
     text-decoration: none;
-    color: white;
+
 }
 
-/*NAVIGATION*/
+.hidden {
+    display: none;
+}
+
+/*BACK BUTTON*/
+.goBack {
+    padding: 18px;
+    cursor: pointer;
+}
+/* give it hidden class if not on a page */
+
+
+/*HEADER MENU*/
+
+/* Nav source code 
+ * Made by Erik Terwan
+ * Adapted by Irina
+ */
+
+a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#menuToggle {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 18px;
+    z-index: 1;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: var(--dark-green);
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 35px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background-color: white;
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    padding-top: 10px;
+    margin: 10px;
+    font-size: 22px;
+    border-bottom: solid var(--dark-blue) 1px;
+    width: 80vw;
+    color: var(--dark-blue)
+}
+
+#menuToggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+#re-moverHeader {
+
+    width: 100vw;
+    height: 35px;
+    font-family: "Coco-medium", sans-serif;
+    color: var(--dark-green);
+    background-color: var(--gray);
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.infoIcon {
+    cursor: pointer;
+    padding-top: 8px;
+    color: var(--dark-green);
+}
+
+.flexMenu {
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 23%;
+}
+
+.pageNames {
+    font-family: "Coco-bold", sans-serif;
+    color: var(--dark-green);
+    font-size: 1.8em;
+    padding-top: 8px;
+    padding-left: 18px;
+}
+
+.menuLinks {
+    display: flex;
+
+}
+
+.chevron {
+    z-index: 2;
+    padding-right: 20px;
+}
+
+/*BASE OVERLAY*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.97);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+.overlayClose {
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    float: right;
+    font-size: 2em;
+    position: relative;
+    cursor: pointer;
+    padding-right: 25px;
+    padding-top: 0px;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/*BOTTOM NAVIGATION*/
 
 #re-moverNav {
-    background-color: white;
+    background-color: var(--gray);
     grid-row-start: 4;
     grid-column: 1 / span 2;
     display: grid;
@@ -60,8 +270,6 @@ a {
     width: 100vw;
     position: fixed;
     z-index: 1;
-    grid-gap: 5px;
-
 }
 
 
@@ -72,9 +280,6 @@ a {
     grid-row-start: 2;
     height: 25px;
 }
-
-
-
 
 
 #nav1 {
@@ -98,56 +303,88 @@ a {
 }
 
 
-/*MENU*/
-#re-moverHeader {
-   
-    width: 100vw;
-    height:25px;
-    background-color: white;
-    margin:0;
-    padding:0;
-    position:fixed;
-   
+/*CONTENT STARTS HERE*/
+/*HOME REGISTERED USER*/
+
+.homeContent {
+    display:flex;
+    flex-direction:column;
+    background: white;
+    justify-content: center;
+    margin:0 20px 0 20px;
 }
 
-#slideout {
-    background: #f4f4f4;
-    position: absolute;
-    width: 400px;
-    height: 150px;
-    top: 30%;
-    right: -400px;
-    padding-left: 0;
-    z-index: 50;
+.homeContent section{
+       height:25vh;
+       margin-bottom:10px;
+       background: linear-gradient(172.87deg, #F8F8F8 9.49%, rgba(248, 247, 245, 0.985313) 45.6%, rgba(248, 246, 242, 0.972014) 90.76%, #F8F3E9 122.78%, rgba(249, 225, 182, 0.671471) 145.42%, rgba(252, 184, 59, 0.06) 145.43%);
+       box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.1);
+       border-radius: 24px;
+       display:flex;
+       justify-content: center;
 }
 
-#clickme {
-    position: absolute;
-    top: 0;
-    left: -50px;
-    height: 20px;
-    width: 20px;
-    background: tomato;
-    cursor: pointer;
+
+
+
+
+
+
+html {
+    max-width: 300px;
 }
 
-#slidecontent {
-    float: right;
-    padding: 35px;
-}
 
-.overlay {
-    background-color: #000;
-    bottom: 0;
-    display: none;
-    left: 0;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    /* IE7 & 8 */
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 49;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
