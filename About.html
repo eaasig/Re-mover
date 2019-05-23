@@ -38,7 +38,7 @@
             <div class="flexMenu">
 
                 <!--   !!!! give the class "hidden" to the infoIcon div on pages with no info button-->
-                <div class="infoIcon" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
+                <div class="infoIcon hidden" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
 
                 <nav role='navigation'>
                     <div id="menuToggle">
@@ -101,14 +101,21 @@
         <!--BACK BUTTON-->
 
         <!--   !!!! give the class "hidden" to the div on pages with no back button-->
-        <div class="goBack hidden" onClick="history.go(-1);">
-            <img src="media/re-mover/back-button.svg" alt="back button">
+       <div class="secondHeader">
+
+            <div class="goBack" onClick="history.go(-1);">
+                <img src="media/re-mover/back-button.svg" alt="back button">
+
+            </div>
+            <div>
+                <h1 class="titles">About Re-mover</h1>
+            </div>
         </div>
         <!--BACK BUTTON-->
 
 
         <!--TITLE-->
-        <h1 class="titles">About Re-mover</h1>
+
 
         <!--   !!!! give the class "hidden" to the div on pages with no back button // Remove "hidden" to show title-->
 
@@ -147,23 +154,25 @@
             <section>
                 <img src="media/re-mover/about/about1.svg" alt="how it works illustration">
             </section>
-            
+
             <section>
                 <p>With Re-mover you can get help to transport unneeded furniture and other objects straight to Reuse.</p>
                 <p><strong>Take it in. Drop it off. <br>
-                    Re-move it.</strong>
+                        Re-move it.</strong>
                 </p>
             </section>
-            
+
             <section>
                 <img src="media/re-mover/about/about2.svg" alt="how it works illustration">
             </section>
-            
-             <section>   <p>We believe in sharing our time... and our rides.</p>
+
+            <section>
+                <p>We believe in sharing our time... brand our rides.</p>
             </section>
 
-            <section> 
-            <a href=""></a>
+            <section class="twoButtons">
+                <a href="How%20It%20Works.html">LEARN MORE</a>
+                <a href="Our%20community.html">OUR COMMUNITY</a>
             </section>
 
         </div>
@@ -171,7 +180,7 @@
 
 
         <!--    BOTTOM NAV-->
-        <footer>
+        <footer class="hidden">
             <nav id="re-moverNav" role="navigation">
                 <a href="re-mover.html" id="nav1" class="re-moverMenu"></a>
                 <a href="Search.html" id="nav2" class="re-moverMenu"></a>

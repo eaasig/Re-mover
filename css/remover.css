@@ -53,6 +53,7 @@ a {
 
 }
 
+
 /*VISIBILITY UTILITIES*/
 .hidden {
     display: none;
@@ -72,12 +73,26 @@ a {
 }
 
 /*BACK BUTTON*/
+.secondHeader{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+
 .goBack {
     padding: 18px;
     cursor: pointer;
+    position:absolute;
+    left:8px;
+   
+
 }
 
 /* give it hidden class if not on a page */
+
+
+
 
 
 /*HEADER MENU*/
@@ -197,6 +212,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 
@@ -364,20 +380,44 @@ a {
 }
 
 
+.twoButtons a {
+    background: var(--dark-green);
+    border-radius:15px;
+    padding:1rem;
+    margin:1rem;
+    display:inline-block;
+    color:white;
+    width: 154px;
+    text-align: center;
+    text-transform: capitalize;
+}
 
 
+/*HOW IT WORKS*/
 
 
+#howitworksContent {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin:5px;
+    padding:5px;
+}
 
+#howitworksContent img {
+    margin-top:25px;
 
+}
 
+.right {
+    align-self:flex-end;
+}
 
-
-
-
-
-
-
+.left {
+    align-self:flex-start;
+}
 
 
 
