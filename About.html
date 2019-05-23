@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/remover.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div class="wrapper">
+        <!--    WARNING MESSAGE-->
+        <div class="warningMessage">
+            <div>
+                <p class="titles">
+                    Re-mover </p><br>
+                <p class="subtitles">This is the prototype of an App <br></p>
+                <p> Please resize your window to 500px</p>
+                <p class="finePrint">This mesage dissapears at optimal resolution</p>
+
+            </div>
+            <div></div>
+        </div>
+        <!--   make sure you have it on all pages-->
+
+        <!--   HEADER +TOP NAV-->
+
+
+
+        <header id="re-moverHeader">
+            <div class="pageNames">Re-mover</div>
+
+            <div class="flexMenu">
+
+                <!--   !!!! give the class "hidden" to the infoIcon div on pages with no info button-->
+                <div class="infoIcon" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
+
+                <nav role='navigation'>
+                    <div id="menuToggle">
+
+                        <input type="checkbox" />
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <ul id="menu" class="mobileOnly">
+                            <a href="Add Ride.html" class="menuLinks">
+                                <li>Add a ride </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Find Ride.html" class="menuLinks">
+                                <li>Find a ride</li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+
+                            </a>
+                            <a href="Map.html" class="menuLinks">
+                                <li>Map </li><img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Calendar.html" class="menuLinks">
+                                <li>Calendar </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Friends.html" class="menuLinks">
+                                <li>Friends </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Account.html" class="menuLinks">
+                                <li>Account </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Settings.html" class="menuLinks">
+                                <li>Settings </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="FAQ.html" class="menuLinks">
+                                <li>FAQ </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="About.html" class="menuLinks">
+                                <li>About Re-mover </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+        </header>
+        <!-- END HEADER +TOP NAV-->
+
+        <br><br>
+
+        <!--BACK BUTTON-->
+
+        <!--   !!!! give the class "hidden" to the div on pages with no back button-->
+        <div class="goBack hidden" onClick="history.go(-1);">
+            <img src="media/re-mover/back-button.svg" alt="back button">
+        </div>
+        <!--BACK BUTTON-->
+
+
+        <!--TITLE-->
+        <h1 class="titles">About Re-mover</h1>
+
+        <!--   !!!! give the class "hidden" to the div on pages with no back button // Remove "hidden" to show title-->
+
+        <!--END TITLE-->
+
+
+        <!--OVERLAY-->
+
+
+        <div id="overlayNav" class="overlay">
+            <div class="overlayClose" onclick="closeOverlay()">&times;</div>
+
+            <div class="overlay-content">
+
+
+
+
+                OVERLAY CONTENT GOES HERE
+
+
+
+
+            </div>
+        </div>
+
+        <!--   OVERLAY END-->
+
+
+
+        <!--PAGE CONTENT-->
+
+        <!--   !!!! please use #pagenameContent -->
+
+        <div id="aboutContent">
+
+            <section>
+                <img src="media/re-mover/about/about1.svg" alt="how it works illustration">
+            </section>
+            
+            <section>
+                <p>With Re-mover you can get help to transport unneeded furniture and other objects straight to Reuse.</p>
+                <p><strong>Take it in. Drop it off. <br>
+                    Re-move it.</strong>
+                </p>
+            </section>
+            
+            <section>
+                <img src="media/re-mover/about/about2.svg" alt="how it works illustration">
+            </section>
+            
+             <section>   <p>We believe in sharing our time... and our rides.</p>
+            </section>
+
+            <section> 
+            <a href=""></a>
+            </section>
+
+        </div>
+
+
+
+        <!--    BOTTOM NAV-->
+        <footer>
+            <nav id="re-moverNav" role="navigation">
+                <a href="re-mover.html" id="nav1" class="re-moverMenu"></a>
+                <a href="Search.html" id="nav2" class="re-moverMenu"></a>
+                <a href="Conversations.html" id="nav3" class="re-moverMenu"></a>
+                <a href="My Profile.html" id="nav4" class="re-moverMenu"></a>
+            </nav>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

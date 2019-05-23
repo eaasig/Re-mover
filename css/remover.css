@@ -248,9 +248,10 @@ a {
 
 .overlay-content {
     position: relative;
-    top: 25%;
+    top: 10%;
     width: 500px;
     text-align: center;
+    transition:opacity 500ms ease;
 }
 
 .overlayClose {
@@ -338,6 +339,97 @@ a {
     display: flex;
     justify-content: center;
 }
+
+
+
+/*CONTENT STARTS HERE*/
+
+
+
+/*ABOUT*/
+
+#aboutContent{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+
+#aboutContent p {
+    margin:10px;
+    padding-left:75px;
+    padding-right:100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
