@@ -6,8 +6,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/remover.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   
 </head>
 
 
@@ -15,7 +17,7 @@
 
 <div class="wrapper">
 <!--    WARNING MESSAGE-->
-    <div class="warningMessage">
+   <div class="warningMessage">
   <div><p class="titles">
       Re-mover    </p><br>
      <p class="subtitles">Treat this as an App prototype <br></p> 
@@ -32,7 +34,7 @@
    
    
     <header id="re-moverHeader">
-        <div class="pageNames">Page Name</div>
+        <div class="pageNames">Trip Planner</div>
 
         <div class="flexMenu">
 
@@ -100,16 +102,17 @@
     <!--BACK BUTTON-->
 
     <!--   !!!! give the class "hidden" to the div on pages with no back button-->
-  <div class="secondHeader">
+    <div class="secondHeader">
 
             <div class="goBack" onClick="history.go(-1);">
                 <img src="media/re-mover/back-button.svg" alt="back button">
 
             </div>
             <div class="titleContainer">
-                <h1 class="titles">Page  title</h1>
+                <h1 class="titles">Find a ride</h1>
             </div>
         </div>
+   
     <!--OVERLAY-->
 
 
@@ -137,13 +140,72 @@
     
  <!--   !!!! please use #pagenameContent -->   
    
-    <div id="">
+    <div id="addContent">
 
-        <section></section>
-        <section></section>
-        <section></section>
+            <div class="selectButtons">
+                <a href="How%20It%20Works.html" style="background-color: var(--yellow);">Drive</a>
+                <a href="Our%20community.html" style="background-color: var(--dark-pink);">Ride</a>
+            </div>
 
-    </div>
+            <div id="searchBlock">
+
+                <div class="search-group">
+                    <div class="icon"><img src="media/re-mover/search/from.svg" alt="from icon"></div>
+                    <div>&nbsp;From&nbsp;</div>
+                    <input list="inputAddresses1" class="search-field" name="myBrowser" />
+                    <datalist id="inputAddresses1">
+                        <option value="Reuse">
+                        <option value="Ringvej syd 104">
+                        <option value="Sønderhøj 30">
+                        </option>
+                    </datalist>
+                    <div class="icon"><i class="fa fa-caret-down"></i></div>
+                </div>
+
+
+                <div class="search-group">
+                    <div class="icon"><img src="media/re-mover/search/to.svg" alt="to icon"></div>
+                    <div> &nbsp;To&nbsp;&nbsp;</div>
+                    <input list="inputAddresses2" class="search-field" name="myBrowser" />
+                    <datalist id="inputAddresses2">
+                        <option value="Reuse">
+                        <option value="Ringvej syd 104">
+                        <option value="Sønderhøj 30">
+                        </option>
+                    </datalist>
+                    <div class="icon"><i class="fa fa-caret-down"></i></div>
+                </div>
+
+                <div class="search-group">
+                    <div class="icon"><img src="media/re-mover/search/mapico.svg" alt="to icon"></div>
+                    <div> &nbsp;Zone</div>
+                    <input list="inputZones" class="search-field" name="myBrowser" />
+                    <datalist id="inputZones">
+                        <option value="1">
+                        <option value="2">
+                        <option value="3">
+                      </option>
+                    </datalist>
+                    <div class="icon"><i class="fa fa-caret-down"></i></div>
+                </div>
+
+                <div class="search-group">
+                    <div class="icon"><img src="media/re-mover/search/calendarico.svg" alt="to icon"></div>
+                    <div> &nbsp;When</div>
+                    <input list="inputAddresses" class="search-field" name="myBrowser" />
+                  
+                    <div class="icon"><i class="fa fa-caret-down"></i></div>
+                </div>
+
+
+            </div>
+
+            <section class="twoButtonsColumn">
+                <a href="Trips%20ride.html">SEARCH RIDES</a>
+              
+            </section>
+        </div>
+
 
 
 
@@ -158,6 +220,7 @@
     </footer>
     </div>
     <script src="js/main.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
 </body>
 
 </html>

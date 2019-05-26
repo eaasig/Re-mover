@@ -13,151 +13,236 @@
 
 <body>
 
-<div class="wrapper">
-<!--    WARNING MESSAGE-->
-  <div class="warningMessage">
-  <div><p class="titles">
-      Re-mover    </p><br>
-     <p class="subtitles">Treat this as an App prototype <br></p> 
-     <p> Please resize your window <br>to a width of 500 pixels</p>
-    <p class="finePrint">This mesage dissapears at optimal width</p>
+    <div class="wrapper">
+        <!--    WARNING MESSAGE-->
+        <div class="warningMessage">
+            <div>
+                <p class="titles">
+                    Re-mover </p><br>
+                <p class="subtitles">Treat this as an App prototype <br></p>
+                <p> Please resize your window <br>to a width of 500 pixels</p>
+                <p class="finePrint">This mesage dissapears at optimal width</p>
 
-  </div>
-  <div></div> 
-</div> 
-<!--   make sure you have it on all pages-->
-    
-    <!--   HEADER +TOP NAV-->
-    
-   
-   
-    <header id="re-moverHeader">
-        <div class="pageNames">Page Name</div>
-
-        <div class="flexMenu">
-
-            <!--   !!!! give the class "hidden" to the infoIcon div on pages with no info button-->
-            
-            <div class="infoIcon" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
-
-            <nav role='navigation'>
-                <div id="menuToggle">
-
-                    <input type="checkbox" />
-
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <ul id="menu"  class="mobileOnly">
-                        <a href="Add Ride.html" class="menuLinks">
-                            <li>Add a ride </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Find Ride.html" class="menuLinks">
-                            <li>Find a ride</li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-
-                        </a>
-                        <a href="Map.html" class="menuLinks">
-                            <li>Map </li><img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Calendar.html" class="menuLinks">
-                            <li>Calendar </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Friends.html" class="menuLinks">
-                            <li>Friends </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Account.html" class="menuLinks">
-                            <li>Account </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Settings.html" class="menuLinks">
-                            <li>Settings </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="FAQ.html" class="menuLinks">
-                            <li>FAQ </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="About.html" class="menuLinks">
-                            <li>About Re-mover </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-
-                    </ul>
-                </div>
-            </nav>
-
+            </div>
+            <div></div>
         </div>
+        <!--   make sure you have it on all pages-->
 
-    </header>
-    <!-- END HEADER +TOP NAV-->
+        <!--   HEADER +TOP NAV-->
 
-    <br><br>
 
-    <!--BACK BUTTON-->
 
-    <!--   !!!! give the class "hidden" to the div on pages with no back button-->
-   <div class="secondHeader">
+        <header id="re-moverHeader">
+            <div class="pageNames">Trips: drive</div>
+
+            <div class="flexMenu">
+
+                <!--   !!!! give the class "hidden" to the infoIcon div on pages with no info button-->
+
+                <div class="infoIcon" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
+
+                <nav role='navigation'>
+                    <div id="menuToggle">
+
+                        <input type="checkbox" />
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <ul id="menu" class="mobileOnly">
+                            <a href="Add Ride.html" class="menuLinks">
+                                <li>Add a ride </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Find Ride.html" class="menuLinks">
+                                <li>Find a ride</li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+
+                            </a>
+                            <a href="Map.html" class="menuLinks">
+                                <li>Map </li><img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Calendar.html" class="menuLinks">
+                                <li>Calendar </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Friends.html" class="menuLinks">
+                                <li>Friends </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Account.html" class="menuLinks">
+                                <li>Account </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Settings.html" class="menuLinks">
+                                <li>Settings </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="FAQ.html" class="menuLinks">
+                                <li>FAQ </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="About.html" class="menuLinks">
+                                <li>About Re-mover </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+        </header>
+        <!-- END HEADER +TOP NAV-->
+
+        <br><br>
+
+        <!--BACK BUTTON-->
+
+        <!--   !!!! give the class "hidden" to the div on pages with no back button-->
+        <div class="secondHeader">
 
             <div class="goBack" onClick="history.go(-1);">
                 <img src="media/re-mover/back-button.svg" alt="back button">
 
             </div>
             <div class="titleContainer">
-                <h1 class="titles">Page  title</h1>
+                <h1 class="titles">Available passengers</h1>
+            </div>
+            <div class="iconContainer">
+               <a href="#"> <img src="media/re-mover/search/bell.svg" alt="bell icon"></a>
+           <a href="#"><img src="media/re-mover/search/searchfilter.svg" alt="search filter icons">
+           </a>  </div>
+        </div>
+
+        <!--OVERLAY-->
+
+
+        <div id="overlayNav" class="overlay">
+            <div class="overlayClose" onclick="closeOverlay()">&times;</div>
+
+            <div class="overlay-content">
+
+
+
+
+                OVERLAY CONTENT GOES HERE
+
+
+
+
             </div>
         </div>
-   
-    <!--OVERLAY-->
+
+        <!--   OVERLAY END-->
 
 
-    <div id="overlayNav" class="overlay">
-        <div class="overlayClose" onclick="closeOverlay()">&times;</div>
 
-        <div class="overlay-content">
-           
-             
-                
-                 
-                   OVERLAY CONTENT GOES HERE
-                   
-                   
-                   
-                   
+        <!--PAGE CONTENT-->
+
+        <!--   !!!! please use #pagenameContent -->
+
+        <div class="resultsContent">
+
+            <section class="resultsContainer">
+                <div>
+                    Monday, 24th June 2019 <br>
+                    From <a href="How%20It%20Works.html">Zone 4</a> <br>
+                    To Reuse
+
+                </div>
+                <div>
+                    <a href="Friend%20profile.html"> <img src="media/re-mover/search/avatar1.svg" alt="avatar man"></a>
+                    
+                    <a href="Friend%20profile.html">Rasmus Nielsen</a>
+
+                    <a href="Chat.html"><img src="media/re-mover/search/chat%20bubble.svg" alt="chat bubble icon"></a>
+
+                </div>
+            </section>
+
+              <section class="resultsContainer">
+                <div>
+                    Monday, 24th June 2019 <br>
+                    From <a href="How%20It%20Works.html">Zone 6</a> <br>
+                    To Reuse
+
+                </div>
+                <div>
+                    <a href="Friend%20profile.html"> <img src="media/re-mover/search/avatar2.svg" alt="avatar man"></a>
+                    
+                    <a href="Friend%20profile.html">Maria Dalgaar</a>
+
+                    <a href="Chat.html"><img src="media/re-mover/search/chat%20bubble.svg" alt="chat bubble icon"></a>
+
+                </div>
+            </section>
+
+         <section class="resultsContainer">
+                <div>
+                    Monday, 24th June 2019 <br>
+                    From <a href="How%20It%20Works.html">Zone 2</a> <br>
+                    To Reuse
+
+                </div>
+                <div>
+                    <a href="Friend%20profile.html"> <img src="media/re-mover/search/avatar3.svg" alt="avatar man"></a>
+                    
+                    <a href="Friend%20profile.html">Rune Andersen</a>
+
+                    <a href="Chat.html"><img src="media/re-mover/search/chat%20bubble.svg" alt="chat bubble icon"></a>
+
+                </div>
+            </section>
+            
+                  <section class="resultsContainer">
+                <div>
+                    Monday, 24th June 2019 <br>
+                    From <a href="How%20It%20Works.html">Zone 1</a> <br>
+                    To Reuse
+
+                </div>
+                <div>
+                    <a href="Friend%20profile.html"> <img src="media/re-mover/search/avatar1.svg" alt="avatar man"></a>
+                    
+                    <a href="Friend%20profile.html">Rasmus Nielsen</a>
+
+                    <a href="Chat.html"><img src="media/re-mover/search/chat%20bubble.svg" alt="chat bubble icon"></a>
+
+                </div>
+            </section>
+
+         <section class="resultsContainer" style="margin-bottom:4.5rem;">
+                <div>
+                    Monday, 24th June 2019 <br>
+                    From <a href="How%20It%20Works.html">Zone 2</a> <br>
+                    To Reuse
+
+                </div>
+                <div>
+                    <a href="Friend%20profile.html"> <img src="media/re-mover/search/avatar1.svg" alt="avatar man"></a>
+                    
+                    <a href="Friend%20profile.html">Rasmus Nielsen</a>
+
+                    <a href="Chat.html"><img src="media/re-mover/search/chat%20bubble.svg" alt="chat bubble icon"></a>
+
+                </div>
+            </section>
         </div>
-    </div>
-
-    <!--   OVERLAY END-->
+       
 
 
-
-    <!--PAGE CONTENT-->
-    
- <!--   !!!! please use #pagenameContent -->   
-   
-    <div id="">
-
-        <section></section>
-        <section></section>
-        <section></section>
-
-    </div>
-
-
-
-    <!--    BOTTOM NAV-->
-    <footer>
-        <nav id="re-moverNav" role="navigation">
-            <a href="re-mover.html" id="nav1" class="re-moverMenu"></a>
-            <a href="Search.html" id="nav2" class="re-moverMenu"></a>
-            <a href="Conversations.html" id="nav3" class="re-moverMenu"></a>
-            <a href="My Profile.html" id="nav4" class="re-moverMenu"></a>
-        </nav>
-    </footer>
+        <!--    BOTTOM NAV-->
+        <footer>
+            <nav id="re-moverNav" role="navigation">
+                <a href="re-mover.html" id="nav1" class="re-moverMenu"></a>
+                <a href="Search.html" id="nav2" class="re-moverMenu"></a>
+                <a href="Conversations.html" id="nav3" class="re-moverMenu"></a>
+                <a href="My Profile.html" id="nav4" class="re-moverMenu"></a>
+            </nav>
+        </footer>
     </div>
     <script src="js/main.js"></script>
 </body>

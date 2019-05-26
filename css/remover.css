@@ -2,8 +2,7 @@
 
 @import url("fonts/Cocogoose-Classic-ExtraBold.ttf");
 @import url("fonts/Cocogoose-Classic-Medium");
-
-
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 @font-face {
     font-family: "Coco-Bold";
@@ -33,7 +32,7 @@
 
 
 input::-webkit-calendar-picker-indicator {
-  display: none;
+    display: none;
 }
 
 body {
@@ -506,19 +505,19 @@ a {
 
 /*ADD SEARCH RIDES*/
 #addContent {
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:20%;
+    margin-top: 10%;
 }
 
 
 #searchBlock {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    padding:2rem;
-    margin:2rem;
+    padding: 2rem;
+    margin: 2rem;
 }
 
 
@@ -530,7 +529,7 @@ a {
     margin-right: auto;
     width: 80%;
     border-bottom: 1px solid #f3f3f3;
-    margin-bottom:1.25rem;
+    margin-bottom: 1.25rem;
 }
 
 .search-field {
@@ -540,38 +539,88 @@ a {
     border: none;
     outline: none;
     font-size: 1em;
-    
+
 
 }
 
-.twoButtonsColumn{
-    display:flex;
+.twoButtonsColumn {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    margin:1rem;
-    
+    margin: 1rem;
+
 }
+
 .twoButtonsColumn a {
     background: var(--dark-green);
     border-radius: 15px;
     padding: 1rem;
-    display:inline-block;
+    display: inline-block;
     margin: auto;
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
     color: white;
     width: 185px;
     text-align: center;
 }
 
-.selectButtons a{
+.selectButtons a {
     background: var(--dark-green);
     border-radius: 15px;
     padding: 1rem;
-    display:inline-block;
+    display: inline-block;
     color: white;
     width: 94px;
     text-align: center;
 }
+
+/*DRIVE SEARCH RESULTS*/
+
+.resultsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    margin: 2rem;
+    height: 20%;
+    margin-bottom: 10px;
+    padding-top:1.5rem;
+    background: linear-gradient(172.87deg, #F8F8F8 9.49%, rgba(248, 247, 245, 0.985313) 45.6%, rgba(248, 246, 242, 0.972014) 90.76%, #F8F3E9 122.78%, rgba(249, 225, 182, 0.671471) 145.42%, rgba(252, 184, 59, 0.06) 145.43%);
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 24px;
+}
+
+.resultsContainer a{
+    font-family: "poppins", sans-serif;
+    color:var(--dark-green);
+}
+.resultsContainer div{
+margin-bottom:1rem;
+}
+
+
+.resultsContainer div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+   
+}
+
+
+
+.iconContainer {
+position:absolute;
+right:4%;
+
+}
+
+
+
+/*RIDE SEARCH RESULTS*/
+
+
+
+
 
 
 
@@ -613,5 +662,8 @@ a {
         align-items: center;
         text-align: center;
         z-index: 999;
+    }
+    .iconContainer{
+        display:none;
     }
 }
