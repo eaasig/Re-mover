@@ -370,7 +370,7 @@ a {
 }
 
 .homeMainContainer {
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -380,15 +380,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-   
-  
+
+
 }
 
-.homeMain a{
-    display:flex;
+.homeMain a {
+    display: flex;
     flex-direction: column;
     justify-content: space-around;
-    
+
 }
 
 
@@ -613,18 +613,19 @@ a {
     margin: 2rem;
     height: 20%;
     margin-bottom: 10px;
-    padding-top:1.5rem;
+    padding-top: 1.5rem;
     background: linear-gradient(172.87deg, #F8F8F8 9.49%, rgba(248, 247, 245, 0.985313) 45.6%, rgba(248, 246, 242, 0.972014) 90.76%, #F8F3E9 122.78%, rgba(249, 225, 182, 0.671471) 145.42%, rgba(252, 184, 59, 0.06) 145.43%);
     box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 24px;
 }
 
-.resultsContainer a{
+.resultsContainer a {
     font-family: "poppins", sans-serif;
-    color:var(--dark-green);
+    color: var(--dark-green);
 }
-.resultsContainer div{
-margin-bottom:1rem;
+
+.resultsContainer div {
+    margin-bottom: 1rem;
 }
 
 
@@ -632,13 +633,13 @@ margin-bottom:1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:90%;
+    width: 90%;
 }
 
 
 .iconContainer {
-position:absolute;
-right:4%;
+    position: absolute;
+    right: 4%;
 
 }
 
@@ -667,23 +668,33 @@ right:4%;
     justify-content: space-between;
     text-decoration: none;
 }
+
 .conversationsMain {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin:1rem;
-    
+    margin: 1rem;
+
 }
 
 /*SETTINGS*/
-.SettingsContent {
+.settingsContent {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     text-decoration: none;
-    border-bottom: solid var(--dark-blue) 1px;
+    width: 80%;
+    margin: 10%;
 }
 
+.settingsContainer a {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: solid var(--dark-blue) 1px;
+    width: 95%;
+
+}
 
 
 /*Screen sizes 500px and up*/
@@ -717,7 +728,8 @@ right:4%;
         text-align: center;
         z-index: 999;
     }
-    .iconContainer{
-        display:none;
+
+    .iconContainer {
+        display: none;
     }
 }
