@@ -369,6 +369,36 @@ a {
     justify-content: center;
 }
 
+.homeMainContainer {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  
+}
+
+.homeMain a{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+
+
+
+
+
+
+
 /*ABOUT*/
 
 #aboutContent {
@@ -603,9 +633,7 @@ margin-bottom:1rem;
     justify-content: space-between;
     align-items: center;
     width:90%;
-   
 }
-
 
 
 .iconContainer {
@@ -616,7 +644,6 @@ right:4%;
 
 
 
-/*RIDE SEARCH RESULTS*/
 
 
 
