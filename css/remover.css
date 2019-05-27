@@ -659,6 +659,33 @@ right:4%;
 }
 
 
+/*CONVERSATIONS*/
+
+.conversations {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.conversationsMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:1rem;
+    
+}
+
+/*SETTINGS*/
+.SettingsContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    border-bottom: solid var(--dark-blue) 1px;
+}
+
+
+
 /*Screen sizes 500px and up*/
 
 @media(min-width: 510px) {
