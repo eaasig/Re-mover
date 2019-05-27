@@ -11,3 +11,5 @@ function closeOverlay() {
 function goBack() {
   window.history.back();
 }
+
+

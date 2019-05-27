@@ -8,158 +8,172 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/vanillaCalendar.css" rel="stylesheet">
+
 </head>
 
 
 <body>
 
-<div class="wrapper">
-<!--    WARNING MESSAGE-->
-    <div class="warningMessage">
-  <div><p class="titles">
-      Re-mover    </p><br>
-     <p class="subtitles">Treat this as an App prototype <br></p> 
-     <p> Please resize your window <br>to a width of 500 pixels</p>
-    <p class="finePrint">This mesage dissapears at optimal width</p>
+    <div class="wrapper">
+        <!--    WARNING MESSAGE-->
+        <div class="warningMessage">
+            <div>
+                <p class="titles">
+                    Re-mover </p><br>
+                <p class="subtitles">Treat this as an App prototype <br></p>
+                <p> Please resize your window <br>to a width of 500 pixels</p>
+                <p class="finePrint">This mesage dissapears at optimal width</p>
 
-  </div>
-  <div></div> 
-</div> 
-<!--   make sure you have it on all pages-->
-    
-    <!--   HEADER +TOP NAV-->
-    
-   
-   
-    <header id="re-moverHeader">
-        <div class="pageNames">Page Name</div>
-
-        <div class="flexMenu">
-
-            <!--   !!!! give the class "hidden" to the infoIcon div on pages with no info button-->
-            <div class="infoIcon" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
-
-            <nav role='navigation'>
-                <div id="menuToggle">
-
-                    <input type="checkbox" />
-
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
-                    <ul id="menu"  class="mobileOnly">
-                        <a href="Add Ride.html" class="menuLinks">
-                            <li>Add a ride </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Find Ride.html" class="menuLinks">
-                            <li>Find a ride</li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-
-                        </a>
-                        <a href="Map.html" class="menuLinks">
-                            <li>Map </li><img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Calendar.html" class="menuLinks">
-                            <li>Calendar </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Friends.html" class="menuLinks">
-                            <li>Friends </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Account.html" class="menuLinks">
-                            <li>Account </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="Settings.html" class="menuLinks">
-                            <li>Settings </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="FAQ.html" class="menuLinks">
-                            <li>FAQ </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-                        <a href="About.html" class="menuLinks">
-                            <li>About Re-mover </li>
-                            <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
-                        </a>
-
-                    </ul>
-                </div>
-            </nav>
-
+            </div>
+            <div></div>
         </div>
+        <!--   make sure you have it on all pages-->
 
-    </header>
-    <!-- END HEADER +TOP NAV-->
+        <!--   HEADER +TOP NAV-->
 
-    <br><br>
 
-    <!--BACK BUTTON-->
 
-    <!--   !!!! give the class "hidden" to the div on pages with no back button-->
-  <div class="secondHeader">
+        <header id="re-moverHeader">
+            <div class="pageNames">Page Name</div>
+
+            <div class="flexMenu">
+
+                <!--   !!!! give the class "hidden" to the infoIcon div on pages with no info button-->
+                <div class="infoIcon" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
+
+                <nav role='navigation'>
+                    <div id="menuToggle">
+
+                        <input type="checkbox" />
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <ul id="menu" class="mobileOnly">
+                            <a href="Add Ride.html" class="menuLinks">
+                                <li>Add a ride </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Find Ride.html" class="menuLinks">
+                                <li>Find a ride</li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+
+                            </a>
+                            <a href="Map.html" class="menuLinks">
+                                <li>Map </li><img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Calendar.html" class="menuLinks">
+                                <li>Calendar </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Friends.html" class="menuLinks">
+                                <li>Friends </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Account.html" class="menuLinks">
+                                <li>Account </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="Settings.html" class="menuLinks">
+                                <li>Settings </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="FAQ.html" class="menuLinks">
+                                <li>FAQ </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+                            <a href="About.html" class="menuLinks">
+                                <li>About Re-mover </li>
+                                <img class="chevron" src="media/re-mover/chevron.svg" alt="chevron">
+                            </a>
+
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+
+        </header>
+        <!-- END HEADER +TOP NAV-->
+
+        <br><br>
+
+        <!--BACK BUTTON-->
+
+        <!--   !!!! give the class "hidden" to the div on pages with no back button-->
+        <div class="secondHeader">
 
             <div class="goBack" onClick="history.go(-1);">
                 <img src="media/re-mover/back-button.svg" alt="back button">
 
             </div>
             <div class="titleContainer">
-                <h1 class="titles">Page  title</h1>
+                <h1 class="titles">Page title</h1>
             </div>
         </div>
 
-   
-    <!--OVERLAY-->
+
+        <!--OVERLAY-->
 
 
-    <div id="overlayNav" class="overlay">
-        <div class="overlayClose" onclick="closeOverlay()">&times;</div>
+        <div id="overlayNav" class="overlay">
+            <div class="overlayClose" onclick="closeOverlay()">&times;</div>
 
-        <div class="overlay-content">
-           
-             
-                
-                 
-                   OVERLAY CONTENT GOES HERE
-                   
-                   
-                   
-                   
+            <div class="overlay-content">
+
+
+
+
+                OVERLAY CONTENT GOES HERE
+
+
+
+
+            </div>
         </div>
-    </div>
 
-    <!--   OVERLAY END-->
-
-
-
-    <!--PAGE CONTENT-->
-    
- <!--   !!!! please use #pagenameContent -->   
-   
-    <div id="">
-
-        <section></section>
-        <section></section>
-        <section></section>
-
-    </div>
+        <!--   OVERLAY END-->
 
 
 
-    <!--    BOTTOM NAV-->
-    <footer>
-        <nav id="re-moverNav" role="navigation">
-            <a href="re-mover.html" id="nav1" class="re-moverMenu"></a>
-            <a href="Search.html" id="nav2" class="re-moverMenu"></a>
-            <a href="Conversations.html" id="nav3" class="re-moverMenu"></a>
-            <a href="My Profile.html" id="nav4" class="re-moverMenu"></a>
-        </nav>
-    </footer>
+        <!--PAGE CONTENT-->
+
+        <!--   !!!! please use #pagenameContent -->
+
+
+        <div class="cal">
+            <div class="cal__header">
+                <button class="btn btn-action btn-link btn-lg" data-calendar-toggle="previous"><svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                    </svg></button>
+                <div class="cal__header__label" data-calendar-label="month">
+                    March 2017
+                </div><button class="btn btn-action btn-link btn-lg" data-calendar-toggle="next"> <svg height="24" version="1.1" viewbox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                    </svg></button>
+            </div>
+            <div class="cal__week">
+                <span>Mon</span> <span>Tue</span><span>Wed</span> <span>Thu</span> <span>Fri</span> <span>Sat</span> <span>Sun</span>
+            </div>
+            <div class="cal__body" data-calendar-area="month"></div>
+        </div>
+
+https://www.cssscript.com/demo/minimal-inline-calendar-date-picker-vanilla-javascript/?fbclid=IwAR0n3VEfduHqJwnXVBhLUB9fLxHA0cq7uaf5V5NM3GS-JsY2e-pjTbtiqXE
+        <!--    BOTTOM NAV-->
+        <footer>
+            <nav id="re-moverNav" role="navigation">
+                <a href="re-mover.html" id="nav1" class="re-moverMenu"></a>
+                <a href="Search.html" id="nav2" class="re-moverMenu"></a>
+                <a href="Conversations.html" id="nav3" class="re-moverMenu"></a>
+                <a href="My Profile.html" id="nav4" class="re-moverMenu"></a>
+            </nav>
+        </footer>
     </div>
     <script src="js/main.js"></script>
+    <script src="js/vanillaCalendar.js"></script>
+
 </body>
 
 </html>

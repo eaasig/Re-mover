@@ -40,6 +40,7 @@ body {
     padding: 0;
     top: 45px;
     overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
 
 }
 
@@ -360,7 +361,7 @@ a {
 }
 
 .homeContent section {
-    height: 25vh;
+    height: 23vh;
     margin-bottom: 10px;
     background: linear-gradient(172.87deg, #F8F8F8 9.49%, rgba(248, 247, 245, 0.985313) 45.6%, rgba(248, 246, 242, 0.972014) 90.76%, #F8F3E9 122.78%, rgba(249, 225, 182, 0.671471) 145.42%, rgba(252, 184, 59, 0.06) 145.43%);
     box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.1);
@@ -378,8 +379,10 @@ a {
 
 .homeMain {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    margin: 2rem;
+    width: 80%;
 
 
 }
@@ -393,7 +396,12 @@ a {
 
 
 
+.homeMain .calendarIcons {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
 
+}
 
 
 
@@ -695,6 +703,84 @@ a {
     width: 95%;
 
 }
+
+
+/*CALENDAR*/
+
+
+
+
+/*CONVERSATIONS*/
+.search-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    font-family: Arial;
+}
+
+.icon {
+    padding: 0.8em 1em 0.7em;
+    background: #ccc;
+    color: #fff;
+}
+
+.search-field {
+    flex: 1;
+    width: 100%;
+    padding: 0.8em 1em 0.7em;
+    border: none;
+    outline: none;
+    font-size: 1em;
+}
+
+
+.conversationsMain a{
+    font-family: "Poppins", sans-serif;
+   
+}
+
+
+.conversationsMain{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom:4rem;
+   
+}
+
+.conversationFlex{
+    display:flex;
+    justify-content:space-around;
+   
+
+}
+
+
+.conversations {
+    padding-bottom:.5rem;
+    border-bottom: 1px solid #f3f3f3;
+    margin:1rem;
+}
+
+.conversations img {
+   margin-right:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Screen sizes 500px and up*/
