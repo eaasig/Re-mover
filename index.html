@@ -30,15 +30,15 @@
     <!--   HEADER +TOP NAV-->
     
    
-   
+  
     <header id="re-moverHeader">
-        <div class="pageNames">Page Name</div>
+        <div class="pageNames">First Steps</div>
 
-        <div class="flexMenu">
+        <div class="flexMenu hidden">
 
             <!--   !!!! give the class "hidden" to the infoIcon div on pages with no info button-->
             
-            <div class="infoIcon" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
+            <div class="infoIcon hidden" onclick="openOverlay()"><img src="media/re-mover/info-icon.svg" alt="info icon"></div>
 
             <nav role='navigation'>
                 <div id="menuToggle">
@@ -103,33 +103,18 @@
     <!--   !!!! give the class "hidden" to the div on pages with no back button-->
    <div class="secondHeader">
 
-            <div class="goBack" onClick="history.go(-1);">
+            <div class="goBack hidden" onClick="history.go(-1);">
                 <img src="media/re-mover/back-button.svg" alt="back button">
 
             </div>
             <div class="titleContainer">
-                <h1 class="titles">Page  title</h1>
+                <h1 class="titles">Welcome</h1>
             </div>
         </div>
    
     <!--OVERLAY-->
 
 
-    <div id="overlayNav" class="overlay">
-        <div class="overlayClose" onclick="closeOverlay()">&times;</div>
-
-        <div class="overlay-content">
-           
-             
-                
-                 
-                   OVERLAY CONTENT GOES HERE
-                   
-                   
-                   
-                   
-        </div>
-    </div>
 
     <!--   OVERLAY END-->
 
@@ -139,16 +124,23 @@
     
  <!--   !!!! please use #pagenameContent -->   
    
-    <div id="">
-
-        <section></section>
-        <section></section>
-        <section></section>
-
-    </div>
-
-
-
+       
+       <div id="indexContent">
+        <div class="indexFlex">
+         <div> <a href="About.html"> <img src="media/re-mover/taketour.svg" alt=""></a></div>
+           <div><p>Find out what Re-mover is all about</p></div> 
+        </div>
+       <div>OR</div>
+        <div class="indexFlex">
+         <div> <a href="Account.html"><img src="media/re-mover/skiptour.svg" alt=""></a></div>
+           <div><p>Don’t worry, you can find the info later</p></div> 
+        </div>
+        <img src="media/re-mover/citydriver.svg" alt="">
+        
+           </div>
+   
+   
+   
     <!--    BOTTOM NAV-->
     <footer>
         <nav id="re-moverNav" role="navigation">
